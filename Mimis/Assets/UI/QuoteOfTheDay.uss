@@ -1,0 +1,188 @@
+/* ============================================================
+   QuoteOfTheDay.uss  —  White + Translucent Pink
+   Mobile Portrait  (reference: 1080 × 1920)
+   ============================================================ */
+
+/* ---------- ROOT ---------- */
+.root {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 72px;
+    padding-bottom: 64px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: rgb(255, 240, 245);
+}
+
+/* ---------- BLOBS ---------- */
+.blob {
+    position: absolute;
+    border-radius: 9999px;
+    opacity: 0.50;
+}
+
+.blob--top-right {
+    width: 52%;
+    height: 30%;
+    top: -6%;
+    right: -10%;
+    background-color: rgba(255, 160, 185, 0.40);
+}
+
+.blob--bottom-left {
+    width: 44%;
+    height: 24%;
+    bottom: -5%;
+    left: -8%;
+    background-color: rgba(255, 180, 200, 0.32);
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.day-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(200, 100, 130, 0.80);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.exaltation {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    white-space: normal;
+    -unity-font-style: italic;
+    background-color: rgba(255, 130, 165, 0.60);
+    border-radius: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.40);
+    max-width: 88%;
+}
+
+/* ---------- QUOTE CARD ---------- */
+.quote-card {
+    flex-direction: column;
+    align-items: center;
+
+    /* CENTER content vertically inside the card */
+    justify-content: center;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 36px;
+    border-width: 1.5px;
+    border-color: rgba(255, 180, 200, 0.50);
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    /* Prevent card from growing beyond screen */
+    overflow: hidden;
+}
+
+/* Wraps just the text content so it stays together in the center */
+.quote-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.quote-mark {
+    font-size: 72px;
+    color: rgba(255, 130, 165, 0.30);
+    -unity-font-style: bold;
+    align-self: flex-start;
+    height: 44px;
+    margin-bottom: -8px;
+    -unity-text-align: upper-left;
+}
+
+.quote-mark--close {
+    align-self: flex-end;
+    margin-top: -12px;
+    margin-bottom: 0px;
+}
+
+.quote-text {
+    font-size: 22px;
+    color: rgba(60, 20, 40, 0.82);
+    -unity-text-align: upper-center;
+    white-space: normal;
+    line-height: 36px;
+    padding-left: 4px;
+    padding-right: 4px;
+    flex-shrink: 0;
+}
+
+.divider {
+    width: 48px;
+    height: 2px;
+    background-color: rgba(255, 140, 170, 0.55);
+    border-radius: 2px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+}
+
+.quote-author {
+    font-size: 13px;
+    color: rgba(180, 60, 100, 0.90);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.next-btn {
+    width: 220px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(255, 110, 155, 0.88);
+    border-width: 0px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.35);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.next-btn:hover {
+    background-color: rgba(235, 75, 130, 0.94);
+}
+
+.next-btn:active {
+    background-color: rgba(210, 55, 110, 0.97);
+    scale: 0.96 0.96;
+}

@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/QuoteOfTheDay.uss?fileID=7433441132597879392&amp;guid=b0b219abc7c4a6745a4076a807281666&amp;type=3#QuoteOfTheDay"/>
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement name="blob-top-right" class="blob blob--top-right"/>
+        <ui:VisualElement name="blob-bottom-left" class="blob blob--bottom-left"/>
+        <ui:VisualElement name="header" class="header" style="-unity-slice-scale: 6px;">
+            <ui:Label name="day-label" text="Tuesday · June 23" class="day-label"/>
+            <ui:Label name="exaltation" text="What a gift — to be alive, to feel, to begin again." class="exaltation" style="-unity-background-scale-mode: scale-and-crop;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="quote-card" class="quote-card">
+            <ui:VisualElement name="quote-content" class="quote-content">
+                <ui:Label name="quote-mark-open" text="“" class="quote-mark"/>
+                <ui:Label name="quote-text" text="The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience." class="quote-text"/>
+                <ui:Label name="quote-mark-close" text="”" class="quote-mark quote-mark--close"/>
+                <ui:VisualElement name="divider" class="divider"/>
+                <ui:Label name="quote-author" text="— Eleanor Roosevelt" class="quote-author"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" class="footer">
+            <ui:Button name="next-quote-btn" text="Next Quote" class="next-btn"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
